@@ -7,6 +7,7 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "custom/nixos",
         "hyprland/mode",
         "hyprland/window"
     ],
@@ -28,6 +29,11 @@
         "custom/power"
     ],
     // Modules configuration
+      "custom/os_button": {
+        "format": "",
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    },
       "hyprland/workspaces": {
       "separate-outputs": true
        
@@ -116,8 +122,8 @@
     "battery": {
         "states": {
             // "good": 95,
-            "warning": 30,
-            "critical": 15
+            "warning": 15,
+            "critical": 7
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
