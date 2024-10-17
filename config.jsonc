@@ -8,11 +8,11 @@
     // Choose the order of the modules
     "modules-left": [
         "custom/os_button",
-        "hyprland/mode",
         "hyprland/window"
     ],
     "modules-center": [
         "hyprland/workspaces",
+        "hyprland/submap",
         "clock"
     ],
     "modules-right": [
@@ -34,7 +34,7 @@
         "on-click": "rofi -show drun",
         "tooltip": false
     },
-      "hyprland/workspaces": {
+        "hyprland/workspaces": {
       "separate-outputs": true,
           "format": "{icon}",
     "on-click": "activate",
@@ -54,9 +54,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">{}</span>"
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
