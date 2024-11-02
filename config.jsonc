@@ -8,10 +8,12 @@
     // Choose the order of the modules
     "modules-left": [
         "custom/os_button",
-        "hyprland/window"
+        "river/window",
+	"hyprland/window"
     ],
     "modules-center": [
-        "hyprland/workspaces",
+        "river/tags",
+	"hyprland/workspaces",
         "hyprland/submap",
         "clock"
     ],
@@ -30,7 +32,7 @@
     ],
     // Modules configuration
       "custom/os_button": {
-        "format": "",
+        "format": "󰣇",
         "on-click": "rofi -show drun",
         "tooltip": false
     },
@@ -45,7 +47,12 @@
       "urgent": "",
       "default": ""
     }
-      },
+        },
+"river/tags": {
+    "num-tags": 9,
+    "tag-labels": [ "", "", "", "", "", "", "", "", "" ],
+},
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -132,7 +139,7 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
