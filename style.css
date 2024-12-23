@@ -83,7 +83,7 @@
    margin: 4px 3px;
    border-radius: 15px;
    border: 0px;
-   background: rgba(60, 100, 125, 0.2);
+   background: @color1;
    transition: all 0.3s ease-in-out;
  }
 
@@ -99,7 +99,7 @@
 
 
  #tags button.occupied {
-   background: rgba(100, 60, 125, 0.3);
+   background: @color2;
    padding: 0px 5px;
    margin: 4px 3px;
    border-radius: 15px;
@@ -109,7 +109,7 @@
  }
 
  #tags button.focused {
-   background: rgba(200, 120, 250, 1);
+   background: @color3;
    border-radius: 15px;
    min-width: 40px;
    transition: all 0.3s ease-in-out;
