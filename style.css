@@ -1,11 +1,12 @@
- * {
+@import '../../.cache/wal/colors-waybar.css';
+* {
    border: none;
    font-size: 14px;
    font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF";
    min-height: 25px;
    padding-left: 5px;
    padding-right: 5px;
-   color: #DAD7BE;
+   color: @foreground;
  }
 
  window#waybar {
@@ -21,21 +22,24 @@
    padding-left: 5px;
    border-radius: 30px;
    margin-top: 2px;
-   background: rgba(30, 30, 30, 0.8);
+   background-color: @background;
+   
  }
 
  .modules-center {
    padding: 3px 15px;
    margin-top: 2px;
    border-radius: 30px;
-   background: rgba(30, 30, 30, 0.8);
+  /* background: rgba(30, 30, 30, 0.8); */
+   background-color: @background;
  }
 
  .modules-left {
    padding-right: 15px;
    border-radius: 30px;
    margin-top: 2px;
-   background: rgba(30, 30, 30, 0.8);
+   background-color: @background;
+  /* background: rgba(30, 30, 30, 0.8); */
  }
 
  #battery,
@@ -55,11 +59,25 @@
  #jack,
  #tray,
  #window,
- #workspaces,
  #clock {
    padding: 0 5px;
  }
 
+ #workspaces button {
+   padding: 0px 5px;
+   margin: 4px 3px;
+   border-radius: 15px;
+   border: 0px;
+   background: @color1;
+   transition: all 0.3s ease-in-out;
+ }
+
+ #workspaces button.active {
+   background: @color2;
+   border-radius: 15px;
+   min-width: 40px;
+   transition: all 0.3s ease-in-out;
+ }
  #tags button {
    padding: 0px 5px;
    margin: 4px 3px;
@@ -98,7 +116,7 @@
  }
 
  #clock {
-   color: #AB9A79;
+   color: @color13;
  }
 
  #battery.charging {
